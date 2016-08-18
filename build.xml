@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="tomcat-demo" default="war" basedir=".">
+	<property file="config.properties" />
+	
+	<tstamp prefix="build-info">
+		<format property="current-date" pattern="d-MMMM-yyyy" locale="en" />
+		<format property="current-time" pattern="hh:mm:ss a z" locale="en" />
+		<format property="year-month-day" pattern="yyyy-MM-dd" locale="en" />
+	</tstamp>
+	
+	<target name="read" depends="">
+		<echo message="${source-url}"/>
+		<echo message="${target-url}"/>
+		<echo message="${build-info.current-date}"/>
+		<echo message="${build-info.current-time}"/>
+		<echo message="${build-info.year-month-day}"/>
+	</target>
+
+
+	<target name="mail-upload-complete">
+		<mail from="ant@cakelycakes.com"
+		      tolist="bigcakes@cakelycakes.com"
+		      subject="${war-file-name} was uploaded to the server"
+		      message="The ${war-file-name} file was uploaded to ${ftp-server} in ${ftp-remotedir}"/>
+	</target>
+
+	<target name="all" depends="read">
+	</target>
+	
+</project>
