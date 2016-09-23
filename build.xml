@@ -13,9 +13,9 @@
 		<echo message="${sourceUrl}"/>
 		<echo message="${sourceUser}"/>
 		<echo message="${sourcePass}"/>
-		<echo message="${productName}"/>
-		<echo message="${productVersion}"/>
-		<echo message="${archiveName}"/>
+		<echo message="${sourceProductName}"/>
+		<echo message="${sourceProductVersion}"/>
+		<echo message="${sourceArchiveName}"/>
 		<echo message="---target details---"/>
 		<echo message="${targetUrl}"/>
 		<echo message="${targetUser}"/>
