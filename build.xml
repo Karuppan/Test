@@ -9,11 +9,22 @@
 	</tstamp>
 	
 	<target name="read" depends="">
+		<echo message="---source details---"/>
+		<echo message="${source-protocol}"/>
 		<echo message="${source-url}"/>
-		<echo message="${target-url}"/>
 		<echo message="${source-port}"/>
+		<echo message="${source-user}"/>
+		<echo message="${source-pass}"/>
+		<echo message="${product-name}"/>
+		<echo message="${product-version}"/>
+		<echo message="${archive-name}"/>
+		<echo message="---target details---"/>
+		<echo message="${target-protocol}"/>
+		<echo message="${target-url}"/>
 		<echo message="${target-port}"/>
 		<echo message="${target-user}"/>
+		<echo message="${target-pass}"/>
+		<echo message="-----------------"/>
 		<echo message="${build-info.current-date}"/>
 		<echo message="${build-info.current-time}"/>
 		<echo message="${build-info.year-month-day}"/>
