@@ -10,18 +10,14 @@
 	
 	<target name="read" depends="">
 		<echo message="---source details---"/>
-		<echo message="${sourceProtocol}"/>
 		<echo message="${sourceUrl}"/>
-		<echo message="${sourcePort}"/>
 		<echo message="${sourceUser}"/>
 		<echo message="${sourcePass}"/>
 		<echo message="${productName}"/>
 		<echo message="${productVersion}"/>
 		<echo message="${archiveName}"/>
 		<echo message="---target details---"/>
-		<echo message="${targetProtocol}"/>
 		<echo message="${targetUrl}"/>
-		<echo message="${targetPort}"/>
 		<echo message="${targetUser}"/>
 		<echo message="${targetPass}"/>
 		<echo message="-----------------"/>
