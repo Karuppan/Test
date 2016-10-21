@@ -24,7 +24,6 @@
 		<echo message="${build-info.current-date}"/>
 		<echo message="${build-info.current-time}"/>
 		<echo message="${build-info.year-month-day}"/>
-		<echo message="${PEGA_HOME}"/>
 	</target>
 
 
